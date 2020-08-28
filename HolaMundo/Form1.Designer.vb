@@ -22,199 +22,238 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.btncalcular = New System.Windows.Forms.Button()
-        Me.cboOperaciones = New System.Windows.Forms.ComboBox()
-        Me.lblnum1 = New System.Windows.Forms.Label()
-        Me.lblnum2 = New System.Windows.Forms.Label()
-        Me.lblrespuesta = New System.Windows.Forms.Label()
-        Me.txtnum2 = New System.Windows.Forms.TextBox()
-        Me.txtnum1 = New System.Windows.Forms.TextBox()
-        Me.optSuma = New System.Windows.Forms.RadioButton()
-        Me.optMultiplicar = New System.Windows.Forms.RadioButton()
-        Me.optResta = New System.Windows.Forms.RadioButton()
-        Me.optPorcentaje = New System.Windows.Forms.RadioButton()
-        Me.optDividir = New System.Windows.Forms.RadioButton()
-        Me.optResiduo = New System.Windows.Forms.RadioButton()
-        Me.optExponente = New System.Windows.Forms.RadioButton()
+        Me.lbltotalx21xf1 = New System.Windows.Forms.Label()
+        Me.lbltotalx1xf1 = New System.Windows.Forms.Label()
+        Me.lbltotalf1 = New System.Windows.Forms.Label()
+        Me.grdEstadistica = New System.Windows.Forms.DataGridView()
+        Me.x1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.f1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.n1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.x1xf1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.x21xf1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lblRespuestaDesvTipica = New System.Windows.Forms.Label()
+        Me.lbldesvtipica = New System.Windows.Forms.Label()
+        Me.lblVarianza = New System.Windows.Forms.Label()
+        Me.lblMedia = New System.Windows.Forms.Label()
+        Me.lblRespuestaVarianza = New System.Windows.Forms.Label()
+        Me.lblRespuestaMedia = New System.Windows.Forms.Label()
+        Me.lblserie = New System.Windows.Forms.Label()
+        Me.txtserie = New System.Windows.Forms.TextBox()
+        Me.btnMediaAritmetica = New System.Windows.Forms.Button()
+        CType(Me.grdEstadistica, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btncalcular
+        'lbltotalx21xf1
         '
-        Me.btncalcular.Location = New System.Drawing.Point(168, 222)
-        Me.btncalcular.Name = "btncalcular"
-        Me.btncalcular.Size = New System.Drawing.Size(134, 46)
-        Me.btncalcular.TabIndex = 0
-        Me.btncalcular.Text = "Calcular"
-        Me.btncalcular.UseVisualStyleBackColor = True
+        Me.lbltotalx21xf1.AutoSize = True
+        Me.lbltotalx21xf1.Location = New System.Drawing.Point(1141, 659)
+        Me.lbltotalx21xf1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbltotalx21xf1.Name = "lbltotalx21xf1"
+        Me.lbltotalx21xf1.Size = New System.Drawing.Size(31, 20)
+        Me.lbltotalx21xf1.TabIndex = 25
+        Me.lbltotalx21xf1.Text = "0.0"
         '
-        'cboOperaciones
+        'lbltotalx1xf1
         '
-        Me.cboOperaciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboOperaciones.FormattingEnabled = True
-        Me.cboOperaciones.Items.AddRange(New Object() {"Seleccione una opcion", "Suma", "Resta", "Multiplicacion", "Division", "Porcentaje", "Exponente", "Residuo"})
-        Me.cboOperaciones.Location = New System.Drawing.Point(345, 132)
-        Me.cboOperaciones.Name = "cboOperaciones"
-        Me.cboOperaciones.Size = New System.Drawing.Size(121, 21)
-        Me.cboOperaciones.TabIndex = 1
+        Me.lbltotalx1xf1.AutoSize = True
+        Me.lbltotalx1xf1.Location = New System.Drawing.Point(945, 659)
+        Me.lbltotalx1xf1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbltotalx1xf1.Name = "lbltotalx1xf1"
+        Me.lbltotalx1xf1.Size = New System.Drawing.Size(31, 20)
+        Me.lbltotalx1xf1.TabIndex = 24
+        Me.lbltotalx1xf1.Text = "0.0"
         '
-        'lblnum1
+        'lbltotalf1
         '
-        Me.lblnum1.AutoSize = True
-        Me.lblnum1.Location = New System.Drawing.Point(11, 40)
-        Me.lblnum1.Name = "lblnum1"
-        Me.lblnum1.Size = New System.Drawing.Size(35, 13)
-        Me.lblnum1.TabIndex = 2
-        Me.lblnum1.Text = "Num1"
+        Me.lbltotalf1.AutoSize = True
+        Me.lbltotalf1.Location = New System.Drawing.Point(698, 659)
+        Me.lbltotalf1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbltotalf1.Name = "lbltotalf1"
+        Me.lbltotalf1.Size = New System.Drawing.Size(31, 20)
+        Me.lbltotalf1.TabIndex = 23
+        Me.lbltotalf1.Text = "0.0"
         '
-        'lblnum2
+        'grdEstadistica
         '
-        Me.lblnum2.AutoSize = True
-        Me.lblnum2.Location = New System.Drawing.Point(230, 40)
-        Me.lblnum2.Name = "lblnum2"
-        Me.lblnum2.Size = New System.Drawing.Size(35, 13)
-        Me.lblnum2.TabIndex = 3
-        Me.lblnum2.Text = "Num2"
+        Me.grdEstadistica.AllowUserToDeleteRows = False
+        Me.grdEstadistica.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grdEstadistica.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.x1, Me.f1, Me.n1, Me.x1xf1, Me.x21xf1})
+        Me.grdEstadistica.Location = New System.Drawing.Point(355, 14)
+        Me.grdEstadistica.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.grdEstadistica.Name = "grdEstadistica"
+        Me.grdEstadistica.RowHeadersWidth = 62
+        Me.grdEstadistica.Size = New System.Drawing.Size(817, 629)
+        Me.grdEstadistica.TabIndex = 22
         '
-        'lblrespuesta
+        'x1
         '
-        Me.lblrespuesta.AutoSize = True
-        Me.lblrespuesta.Location = New System.Drawing.Point(396, 37)
-        Me.lblrespuesta.Name = "lblrespuesta"
-        Me.lblrespuesta.Size = New System.Drawing.Size(70, 13)
-        Me.lblrespuesta.TabIndex = 4
-        Me.lblrespuesta.Text = "Respuesta: ?"
+        Me.x1.HeaderText = "X1"
+        Me.x1.MinimumWidth = 8
+        Me.x1.Name = "x1"
+        Me.x1.Width = 150
         '
-        'txtnum2
+        'f1
         '
-        Me.txtnum2.Location = New System.Drawing.Point(271, 37)
-        Me.txtnum2.Name = "txtnum2"
-        Me.txtnum2.Size = New System.Drawing.Size(100, 20)
-        Me.txtnum2.TabIndex = 6
+        Me.f1.HeaderText = "F1"
+        Me.f1.MinimumWidth = 8
+        Me.f1.Name = "f1"
+        Me.f1.Width = 150
         '
-        'txtnum1
+        'n1
         '
-        Me.txtnum1.Location = New System.Drawing.Point(52, 37)
-        Me.txtnum1.Name = "txtnum1"
-        Me.txtnum1.Size = New System.Drawing.Size(100, 20)
-        Me.txtnum1.TabIndex = 7
+        Me.n1.HeaderText = "N1"
+        Me.n1.MinimumWidth = 8
+        Me.n1.Name = "n1"
+        Me.n1.Width = 150
         '
-        'optSuma
+        'x1xf1
         '
-        Me.optSuma.AutoSize = True
-        Me.optSuma.Location = New System.Drawing.Point(169, 40)
-        Me.optSuma.Name = "optSuma"
-        Me.optSuma.Size = New System.Drawing.Size(31, 17)
-        Me.optSuma.TabIndex = 8
-        Me.optSuma.TabStop = True
-        Me.optSuma.Text = "+"
-        Me.optSuma.UseVisualStyleBackColor = True
+        Me.x1xf1.HeaderText = "X1 x F1"
+        Me.x1xf1.MinimumWidth = 8
+        Me.x1xf1.Name = "x1xf1"
+        Me.x1xf1.Width = 150
         '
-        'optMultiplicar
+        'x21xf1
         '
-        Me.optMultiplicar.AutoSize = True
-        Me.optMultiplicar.Location = New System.Drawing.Point(168, 86)
-        Me.optMultiplicar.Name = "optMultiplicar"
-        Me.optMultiplicar.Size = New System.Drawing.Size(29, 17)
-        Me.optMultiplicar.TabIndex = 9
-        Me.optMultiplicar.TabStop = True
-        Me.optMultiplicar.Text = "*"
-        Me.optMultiplicar.UseVisualStyleBackColor = True
+        Me.x21xf1.HeaderText = "X21 x F1"
+        Me.x21xf1.MinimumWidth = 8
+        Me.x21xf1.Name = "x21xf1"
+        Me.x21xf1.Width = 150
         '
-        'optResta
+        'lblRespuestaDesvTipica
         '
-        Me.optResta.AutoSize = True
-        Me.optResta.Location = New System.Drawing.Point(169, 63)
-        Me.optResta.Name = "optResta"
-        Me.optResta.Size = New System.Drawing.Size(28, 17)
-        Me.optResta.TabIndex = 10
-        Me.optResta.TabStop = True
-        Me.optResta.Text = "-"
-        Me.optResta.UseVisualStyleBackColor = True
+        Me.lblRespuestaDesvTipica.AutoSize = True
+        Me.lblRespuestaDesvTipica.Location = New System.Drawing.Point(173, 194)
+        Me.lblRespuestaDesvTipica.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblRespuestaDesvTipica.Name = "lblRespuestaDesvTipica"
+        Me.lblRespuestaDesvTipica.Size = New System.Drawing.Size(18, 20)
+        Me.lblRespuestaDesvTipica.TabIndex = 21
+        Me.lblRespuestaDesvTipica.Text = "?"
         '
-        'optPorcentaje
+        'lbldesvtipica
         '
-        Me.optPorcentaje.AutoSize = True
-        Me.optPorcentaje.Location = New System.Drawing.Point(168, 132)
-        Me.optPorcentaje.Name = "optPorcentaje"
-        Me.optPorcentaje.Size = New System.Drawing.Size(76, 17)
-        Me.optPorcentaje.TabIndex = 11
-        Me.optPorcentaje.TabStop = True
-        Me.optPorcentaje.Text = "Porcentaje"
-        Me.optPorcentaje.UseVisualStyleBackColor = True
+        Me.lbldesvtipica.AutoSize = True
+        Me.lbldesvtipica.Location = New System.Drawing.Point(59, 194)
+        Me.lbldesvtipica.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbldesvtipica.Name = "lbldesvtipica"
+        Me.lbldesvtipica.Size = New System.Drawing.Size(98, 20)
+        Me.lbldesvtipica.TabIndex = 20
+        Me.lbldesvtipica.Text = "Desv. Tipica:"
         '
-        'optDividir
+        'lblVarianza
         '
-        Me.optDividir.AutoSize = True
-        Me.optDividir.Location = New System.Drawing.Point(168, 109)
-        Me.optDividir.Name = "optDividir"
-        Me.optDividir.Size = New System.Drawing.Size(30, 17)
-        Me.optDividir.TabIndex = 12
-        Me.optDividir.TabStop = True
-        Me.optDividir.Text = "/"
-        Me.optDividir.UseVisualStyleBackColor = True
+        Me.lblVarianza.AutoSize = True
+        Me.lblVarianza.Location = New System.Drawing.Point(59, 137)
+        Me.lblVarianza.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblVarianza.Name = "lblVarianza"
+        Me.lblVarianza.Size = New System.Drawing.Size(76, 20)
+        Me.lblVarianza.TabIndex = 19
+        Me.lblVarianza.Text = "Varianza:"
         '
-        'optResiduo
+        'lblMedia
         '
-        Me.optResiduo.AutoSize = True
-        Me.optResiduo.Location = New System.Drawing.Point(167, 178)
-        Me.optResiduo.Name = "optResiduo"
-        Me.optResiduo.Size = New System.Drawing.Size(64, 17)
-        Me.optResiduo.TabIndex = 13
-        Me.optResiduo.TabStop = True
-        Me.optResiduo.Text = "Residuo"
-        Me.optResiduo.UseVisualStyleBackColor = True
+        Me.lblMedia.AutoSize = True
+        Me.lblMedia.Location = New System.Drawing.Point(59, 95)
+        Me.lblMedia.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblMedia.Name = "lblMedia"
+        Me.lblMedia.Size = New System.Drawing.Size(56, 20)
+        Me.lblMedia.TabIndex = 18
+        Me.lblMedia.Text = "Media:"
         '
-        'optExponente
+        'lblRespuestaVarianza
         '
-        Me.optExponente.AutoSize = True
-        Me.optExponente.Location = New System.Drawing.Point(167, 155)
-        Me.optExponente.Name = "optExponente"
-        Me.optExponente.Size = New System.Drawing.Size(31, 17)
-        Me.optExponente.TabIndex = 14
-        Me.optExponente.TabStop = True
-        Me.optExponente.Text = "^"
-        Me.optExponente.UseVisualStyleBackColor = True
+        Me.lblRespuestaVarianza.AutoSize = True
+        Me.lblRespuestaVarianza.Location = New System.Drawing.Point(173, 137)
+        Me.lblRespuestaVarianza.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblRespuestaVarianza.Name = "lblRespuestaVarianza"
+        Me.lblRespuestaVarianza.Size = New System.Drawing.Size(18, 20)
+        Me.lblRespuestaVarianza.TabIndex = 17
+        Me.lblRespuestaVarianza.Text = "?"
+        '
+        'lblRespuestaMedia
+        '
+        Me.lblRespuestaMedia.AutoSize = True
+        Me.lblRespuestaMedia.Location = New System.Drawing.Point(173, 95)
+        Me.lblRespuestaMedia.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblRespuestaMedia.Name = "lblRespuestaMedia"
+        Me.lblRespuestaMedia.Size = New System.Drawing.Size(18, 20)
+        Me.lblRespuestaMedia.TabIndex = 16
+        Me.lblRespuestaMedia.Text = "?"
+        '
+        'lblserie
+        '
+        Me.lblserie.AutoSize = True
+        Me.lblserie.Location = New System.Drawing.Point(59, 38)
+        Me.lblserie.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblserie.Name = "lblserie"
+        Me.lblserie.Size = New System.Drawing.Size(50, 20)
+        Me.lblserie.TabIndex = 15
+        Me.lblserie.Text = "Serie:"
+        '
+        'txtserie
+        '
+        Me.txtserie.Location = New System.Drawing.Point(117, 35)
+        Me.txtserie.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtserie.Name = "txtserie"
+        Me.txtserie.Size = New System.Drawing.Size(230, 26)
+        Me.txtserie.TabIndex = 14
+        Me.txtserie.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'btnMediaAritmetica
+        '
+        Me.btnMediaAritmetica.Location = New System.Drawing.Point(79, 545)
+        Me.btnMediaAritmetica.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnMediaAritmetica.Name = "btnMediaAritmetica"
+        Me.btnMediaAritmetica.Size = New System.Drawing.Size(247, 98)
+        Me.btnMediaAritmetica.TabIndex = 13
+        Me.btnMediaAritmetica.Text = "Calculos estadisticos"
+        Me.btnMediaAritmetica.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(473, 326)
-        Me.Controls.Add(Me.optExponente)
-        Me.Controls.Add(Me.optResiduo)
-        Me.Controls.Add(Me.optDividir)
-        Me.Controls.Add(Me.optPorcentaje)
-        Me.Controls.Add(Me.optResta)
-        Me.Controls.Add(Me.optMultiplicar)
-        Me.Controls.Add(Me.optSuma)
-        Me.Controls.Add(Me.txtnum1)
-        Me.Controls.Add(Me.txtnum2)
-        Me.Controls.Add(Me.lblrespuesta)
-        Me.Controls.Add(Me.lblnum2)
-        Me.Controls.Add(Me.lblnum1)
-        Me.Controls.Add(Me.cboOperaciones)
-        Me.Controls.Add(Me.btncalcular)
+        Me.ClientSize = New System.Drawing.Size(1209, 684)
+        Me.Controls.Add(Me.lbltotalx21xf1)
+        Me.Controls.Add(Me.lbltotalx1xf1)
+        Me.Controls.Add(Me.lbltotalf1)
+        Me.Controls.Add(Me.grdEstadistica)
+        Me.Controls.Add(Me.lblRespuestaDesvTipica)
+        Me.Controls.Add(Me.lbldesvtipica)
+        Me.Controls.Add(Me.lblVarianza)
+        Me.Controls.Add(Me.lblMedia)
+        Me.Controls.Add(Me.lblRespuestaVarianza)
+        Me.Controls.Add(Me.lblRespuestaMedia)
+        Me.Controls.Add(Me.lblserie)
+        Me.Controls.Add(Me.txtserie)
+        Me.Controls.Add(Me.btnMediaAritmetica)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Calculadora Basica"
+        Me.Text = "Matrices y Poo"
+        CType(Me.grdEstadistica, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents btncalcular As Button
-    Friend WithEvents cboOperaciones As ComboBox
-    Friend WithEvents lblnum1 As Label
-    Friend WithEvents lblnum2 As Label
-    Friend WithEvents lblrespuesta As Label
-    Friend WithEvents txtnum2 As TextBox
-    Friend WithEvents txtnum1 As TextBox
-    Friend WithEvents optSuma As RadioButton
-    Friend WithEvents optMultiplicar As RadioButton
-    Friend WithEvents optResta As RadioButton
-    Friend WithEvents optPorcentaje As RadioButton
-    Friend WithEvents optDividir As RadioButton
-    Friend WithEvents optResiduo As RadioButton
-    Friend WithEvents optExponente As RadioButton
+    Friend WithEvents lbltotalx21xf1 As Label
+    Friend WithEvents lbltotalx1xf1 As Label
+    Friend WithEvents lbltotalf1 As Label
+    Friend WithEvents grdEstadistica As DataGridView
+    Friend WithEvents x1 As DataGridViewTextBoxColumn
+    Friend WithEvents f1 As DataGridViewTextBoxColumn
+    Friend WithEvents n1 As DataGridViewTextBoxColumn
+    Friend WithEvents x1xf1 As DataGridViewTextBoxColumn
+    Friend WithEvents x21xf1 As DataGridViewTextBoxColumn
+    Friend WithEvents lblRespuestaDesvTipica As Label
+    Friend WithEvents lbldesvtipica As Label
+    Friend WithEvents lblVarianza As Label
+    Friend WithEvents lblMedia As Label
+    Friend WithEvents lblRespuestaVarianza As Label
+    Friend WithEvents lblRespuestaMedia As Label
+    Friend WithEvents lblserie As Label
+    Friend WithEvents txtserie As TextBox
+    Friend WithEvents btnMediaAritmetica As Button
 End Class
