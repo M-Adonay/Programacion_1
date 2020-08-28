@@ -22,199 +22,132 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.btncalcular = New System.Windows.Forms.Button()
-        Me.cboOperaciones = New System.Windows.Forms.ComboBox()
-        Me.lblnum1 = New System.Windows.Forms.Label()
-        Me.lblnum2 = New System.Windows.Forms.Label()
-        Me.lblrespuesta = New System.Windows.Forms.Label()
-        Me.txtnum2 = New System.Windows.Forms.TextBox()
-        Me.txtnum1 = New System.Windows.Forms.TextBox()
-        Me.optSuma = New System.Windows.Forms.RadioButton()
-        Me.optMultiplicar = New System.Windows.Forms.RadioButton()
-        Me.optResta = New System.Windows.Forms.RadioButton()
-        Me.optPorcentaje = New System.Windows.Forms.RadioButton()
-        Me.optDividir = New System.Windows.Forms.RadioButton()
-        Me.optResiduo = New System.Windows.Forms.RadioButton()
-        Me.optExponente = New System.Windows.Forms.RadioButton()
+        Me.lblinteresCompuesto = New System.Windows.Forms.Label()
+        Me.lblInteresSimple = New System.Windows.Forms.Label()
+        Me.txtTiempo = New System.Windows.Forms.TextBox()
+        Me.lbltiempo = New System.Windows.Forms.Label()
+        Me.txtinteres = New System.Windows.Forms.TextBox()
+        Me.lblinteres = New System.Windows.Forms.Label()
+        Me.txtcapital = New System.Windows.Forms.TextBox()
+        Me.lblcapital = New System.Windows.Forms.Label()
+        Me.btnCalcular = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'btncalcular
+        'lblinteresCompuesto
         '
-        Me.btncalcular.Location = New System.Drawing.Point(168, 222)
-        Me.btncalcular.Name = "btncalcular"
-        Me.btncalcular.Size = New System.Drawing.Size(134, 46)
-        Me.btncalcular.TabIndex = 0
-        Me.btncalcular.Text = "Calcular"
-        Me.btncalcular.UseVisualStyleBackColor = True
+        Me.lblinteresCompuesto.AutoSize = True
+        Me.lblinteresCompuesto.Location = New System.Drawing.Point(424, 184)
+        Me.lblinteresCompuesto.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblinteresCompuesto.Name = "lblinteresCompuesto"
+        Me.lblinteresCompuesto.Size = New System.Drawing.Size(162, 20)
+        Me.lblinteresCompuesto.TabIndex = 17
+        Me.lblinteresCompuesto.Text = "Interes Compuesto: ?"
         '
-        'cboOperaciones
+        'lblInteresSimple
         '
-        Me.cboOperaciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboOperaciones.FormattingEnabled = True
-        Me.cboOperaciones.Items.AddRange(New Object() {"Seleccione una opcion", "Suma", "Resta", "Multiplicacion", "Division", "Porcentaje", "Exponente", "Residuo"})
-        Me.cboOperaciones.Location = New System.Drawing.Point(345, 132)
-        Me.cboOperaciones.Name = "cboOperaciones"
-        Me.cboOperaciones.Size = New System.Drawing.Size(121, 21)
-        Me.cboOperaciones.TabIndex = 1
+        Me.lblInteresSimple.AutoSize = True
+        Me.lblInteresSimple.Location = New System.Drawing.Point(96, 184)
+        Me.lblInteresSimple.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblInteresSimple.Name = "lblInteresSimple"
+        Me.lblInteresSimple.Size = New System.Drawing.Size(128, 20)
+        Me.lblInteresSimple.TabIndex = 16
+        Me.lblInteresSimple.Text = "Interes Simple: ?"
         '
-        'lblnum1
+        'txtTiempo
         '
-        Me.lblnum1.AutoSize = True
-        Me.lblnum1.Location = New System.Drawing.Point(11, 40)
-        Me.lblnum1.Name = "lblnum1"
-        Me.lblnum1.Size = New System.Drawing.Size(35, 13)
-        Me.lblnum1.TabIndex = 2
-        Me.lblnum1.Text = "Num1"
+        Me.txtTiempo.Location = New System.Drawing.Point(594, 56)
+        Me.txtTiempo.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtTiempo.Name = "txtTiempo"
+        Me.txtTiempo.Size = New System.Drawing.Size(72, 26)
+        Me.txtTiempo.TabIndex = 15
         '
-        'lblnum2
+        'lbltiempo
         '
-        Me.lblnum2.AutoSize = True
-        Me.lblnum2.Location = New System.Drawing.Point(230, 40)
-        Me.lblnum2.Name = "lblnum2"
-        Me.lblnum2.Size = New System.Drawing.Size(35, 13)
-        Me.lblnum2.TabIndex = 3
-        Me.lblnum2.Text = "Num2"
+        Me.lbltiempo.AutoSize = True
+        Me.lbltiempo.Location = New System.Drawing.Point(470, 63)
+        Me.lbltiempo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbltiempo.Name = "lbltiempo"
+        Me.lbltiempo.Size = New System.Drawing.Size(116, 20)
+        Me.lbltiempo.TabIndex = 14
+        Me.lbltiempo.Text = "Tiempo (Años):"
         '
-        'lblrespuesta
+        'txtinteres
         '
-        Me.lblrespuesta.AutoSize = True
-        Me.lblrespuesta.Location = New System.Drawing.Point(396, 37)
-        Me.lblrespuesta.Name = "lblrespuesta"
-        Me.lblrespuesta.Size = New System.Drawing.Size(70, 13)
-        Me.lblrespuesta.TabIndex = 4
-        Me.lblrespuesta.Text = "Respuesta: ?"
+        Me.txtinteres.Location = New System.Drawing.Point(352, 57)
+        Me.txtinteres.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtinteres.Name = "txtinteres"
+        Me.txtinteres.Size = New System.Drawing.Size(80, 26)
+        Me.txtinteres.TabIndex = 13
         '
-        'txtnum2
+        'lblinteres
         '
-        Me.txtnum2.Location = New System.Drawing.Point(271, 37)
-        Me.txtnum2.Name = "txtnum2"
-        Me.txtnum2.Size = New System.Drawing.Size(100, 20)
-        Me.txtnum2.TabIndex = 6
+        Me.lblinteres.AutoSize = True
+        Me.lblinteres.Location = New System.Drawing.Point(281, 62)
+        Me.lblinteres.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblinteres.Name = "lblinteres"
+        Me.lblinteres.Size = New System.Drawing.Size(63, 20)
+        Me.lblinteres.TabIndex = 12
+        Me.lblinteres.Text = "Interes:"
         '
-        'txtnum1
+        'txtcapital
         '
-        Me.txtnum1.Location = New System.Drawing.Point(52, 37)
-        Me.txtnum1.Name = "txtnum1"
-        Me.txtnum1.Size = New System.Drawing.Size(100, 20)
-        Me.txtnum1.TabIndex = 7
+        Me.txtcapital.Location = New System.Drawing.Point(100, 57)
+        Me.txtcapital.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtcapital.Name = "txtcapital"
+        Me.txtcapital.Size = New System.Drawing.Size(151, 26)
+        Me.txtcapital.TabIndex = 11
         '
-        'optSuma
+        'lblcapital
         '
-        Me.optSuma.AutoSize = True
-        Me.optSuma.Location = New System.Drawing.Point(169, 40)
-        Me.optSuma.Name = "optSuma"
-        Me.optSuma.Size = New System.Drawing.Size(31, 17)
-        Me.optSuma.TabIndex = 8
-        Me.optSuma.TabStop = True
-        Me.optSuma.Text = "+"
-        Me.optSuma.UseVisualStyleBackColor = True
+        Me.lblcapital.AutoSize = True
+        Me.lblcapital.Location = New System.Drawing.Point(33, 62)
+        Me.lblcapital.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblcapital.Name = "lblcapital"
+        Me.lblcapital.Size = New System.Drawing.Size(62, 20)
+        Me.lblcapital.TabIndex = 10
+        Me.lblcapital.Text = "Capital:"
         '
-        'optMultiplicar
+        'btnCalcular
         '
-        Me.optMultiplicar.AutoSize = True
-        Me.optMultiplicar.Location = New System.Drawing.Point(168, 86)
-        Me.optMultiplicar.Name = "optMultiplicar"
-        Me.optMultiplicar.Size = New System.Drawing.Size(29, 17)
-        Me.optMultiplicar.TabIndex = 9
-        Me.optMultiplicar.TabStop = True
-        Me.optMultiplicar.Text = "*"
-        Me.optMultiplicar.UseVisualStyleBackColor = True
-        '
-        'optResta
-        '
-        Me.optResta.AutoSize = True
-        Me.optResta.Location = New System.Drawing.Point(169, 63)
-        Me.optResta.Name = "optResta"
-        Me.optResta.Size = New System.Drawing.Size(28, 17)
-        Me.optResta.TabIndex = 10
-        Me.optResta.TabStop = True
-        Me.optResta.Text = "-"
-        Me.optResta.UseVisualStyleBackColor = True
-        '
-        'optPorcentaje
-        '
-        Me.optPorcentaje.AutoSize = True
-        Me.optPorcentaje.Location = New System.Drawing.Point(168, 132)
-        Me.optPorcentaje.Name = "optPorcentaje"
-        Me.optPorcentaje.Size = New System.Drawing.Size(76, 17)
-        Me.optPorcentaje.TabIndex = 11
-        Me.optPorcentaje.TabStop = True
-        Me.optPorcentaje.Text = "Porcentaje"
-        Me.optPorcentaje.UseVisualStyleBackColor = True
-        '
-        'optDividir
-        '
-        Me.optDividir.AutoSize = True
-        Me.optDividir.Location = New System.Drawing.Point(168, 109)
-        Me.optDividir.Name = "optDividir"
-        Me.optDividir.Size = New System.Drawing.Size(30, 17)
-        Me.optDividir.TabIndex = 12
-        Me.optDividir.TabStop = True
-        Me.optDividir.Text = "/"
-        Me.optDividir.UseVisualStyleBackColor = True
-        '
-        'optResiduo
-        '
-        Me.optResiduo.AutoSize = True
-        Me.optResiduo.Location = New System.Drawing.Point(167, 178)
-        Me.optResiduo.Name = "optResiduo"
-        Me.optResiduo.Size = New System.Drawing.Size(64, 17)
-        Me.optResiduo.TabIndex = 13
-        Me.optResiduo.TabStop = True
-        Me.optResiduo.Text = "Residuo"
-        Me.optResiduo.UseVisualStyleBackColor = True
-        '
-        'optExponente
-        '
-        Me.optExponente.AutoSize = True
-        Me.optExponente.Location = New System.Drawing.Point(167, 155)
-        Me.optExponente.Name = "optExponente"
-        Me.optExponente.Size = New System.Drawing.Size(31, 17)
-        Me.optExponente.TabIndex = 14
-        Me.optExponente.TabStop = True
-        Me.optExponente.Text = "^"
-        Me.optExponente.UseVisualStyleBackColor = True
+        Me.btnCalcular.Location = New System.Drawing.Point(208, 309)
+        Me.btnCalcular.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnCalcular.Name = "btnCalcular"
+        Me.btnCalcular.Size = New System.Drawing.Size(246, 91)
+        Me.btnCalcular.TabIndex = 9
+        Me.btnCalcular.Text = "Calcular"
+        Me.btnCalcular.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(473, 326)
-        Me.Controls.Add(Me.optExponente)
-        Me.Controls.Add(Me.optResiduo)
-        Me.Controls.Add(Me.optDividir)
-        Me.Controls.Add(Me.optPorcentaje)
-        Me.Controls.Add(Me.optResta)
-        Me.Controls.Add(Me.optMultiplicar)
-        Me.Controls.Add(Me.optSuma)
-        Me.Controls.Add(Me.txtnum1)
-        Me.Controls.Add(Me.txtnum2)
-        Me.Controls.Add(Me.lblrespuesta)
-        Me.Controls.Add(Me.lblnum2)
-        Me.Controls.Add(Me.lblnum1)
-        Me.Controls.Add(Me.cboOperaciones)
-        Me.Controls.Add(Me.btncalcular)
+        Me.ClientSize = New System.Drawing.Size(710, 502)
+        Me.Controls.Add(Me.lblinteresCompuesto)
+        Me.Controls.Add(Me.lblInteresSimple)
+        Me.Controls.Add(Me.txtTiempo)
+        Me.Controls.Add(Me.lbltiempo)
+        Me.Controls.Add(Me.txtinteres)
+        Me.Controls.Add(Me.lblinteres)
+        Me.Controls.Add(Me.txtcapital)
+        Me.Controls.Add(Me.lblcapital)
+        Me.Controls.Add(Me.btnCalcular)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Calculadora Basica"
+        Me.Text = "Ejercicios"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents btncalcular As Button
-    Friend WithEvents cboOperaciones As ComboBox
-    Friend WithEvents lblnum1 As Label
-    Friend WithEvents lblnum2 As Label
-    Friend WithEvents lblrespuesta As Label
-    Friend WithEvents txtnum2 As TextBox
-    Friend WithEvents txtnum1 As TextBox
-    Friend WithEvents optSuma As RadioButton
-    Friend WithEvents optMultiplicar As RadioButton
-    Friend WithEvents optResta As RadioButton
-    Friend WithEvents optPorcentaje As RadioButton
-    Friend WithEvents optDividir As RadioButton
-    Friend WithEvents optResiduo As RadioButton
-    Friend WithEvents optExponente As RadioButton
+    Friend WithEvents lblinteresCompuesto As Label
+    Friend WithEvents lblInteresSimple As Label
+    Friend WithEvents txtTiempo As TextBox
+    Friend WithEvents lbltiempo As Label
+    Friend WithEvents txtinteres As TextBox
+    Friend WithEvents lblinteres As Label
+    Friend WithEvents txtcapital As TextBox
+    Friend WithEvents lblcapital As Label
+    Friend WithEvents btnCalcular As Button
 End Class
