@@ -22,71 +22,71 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblRespuestaRomano = New System.Windows.Forms.Label()
-        Me.txtnumero = New System.Windows.Forms.TextBox()
-        Me.lblnumero = New System.Windows.Forms.Label()
-        Me.btnCalcular = New System.Windows.Forms.Button()
+        Me.cboMun = New System.Windows.Forms.ComboBox()
+        Me.cboDepto = New System.Windows.Forms.ComboBox()
+        Me.lblmun = New System.Windows.Forms.Label()
+        Me.lbldepto = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'lblRespuestaRomano
+        'cboMun
         '
-        Me.lblRespuestaRomano.AutoSize = True
-        Me.lblRespuestaRomano.Location = New System.Drawing.Point(269, 49)
-        Me.lblRespuestaRomano.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblRespuestaRomano.Name = "lblRespuestaRomano"
-        Me.lblRespuestaRomano.Size = New System.Drawing.Size(147, 20)
-        Me.lblRespuestaRomano.TabIndex = 11
-        Me.lblRespuestaRomano.Text = "Numero Romano: ?"
+        Me.cboMun.FormattingEnabled = True
+        Me.cboMun.Location = New System.Drawing.Point(391, 55)
+        Me.cboMun.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.cboMun.Name = "cboMun"
+        Me.cboMun.Size = New System.Drawing.Size(180, 28)
+        Me.cboMun.TabIndex = 13
         '
-        'txtnumero
+        'cboDepto
         '
-        Me.txtnumero.Location = New System.Drawing.Point(99, 43)
-        Me.txtnumero.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.txtnumero.Name = "txtnumero"
-        Me.txtnumero.Size = New System.Drawing.Size(151, 26)
-        Me.txtnumero.TabIndex = 10
+        Me.cboDepto.FormattingEnabled = True
+        Me.cboDepto.Location = New System.Drawing.Point(104, 55)
+        Me.cboDepto.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.cboDepto.Name = "cboDepto"
+        Me.cboDepto.Size = New System.Drawing.Size(180, 28)
+        Me.cboDepto.TabIndex = 12
         '
-        'lblnumero
+        'lblmun
         '
-        Me.lblnumero.AutoSize = True
-        Me.lblnumero.Location = New System.Drawing.Point(13, 48)
-        Me.lblnumero.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblnumero.Name = "lblnumero"
-        Me.lblnumero.Size = New System.Drawing.Size(62, 20)
-        Me.lblnumero.TabIndex = 9
-        Me.lblnumero.Text = "Capital:"
+        Me.lblmun.AutoSize = True
+        Me.lblmun.Location = New System.Drawing.Point(339, 58)
+        Me.lblmun.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblmun.Name = "lblmun"
+        Me.lblmun.Size = New System.Drawing.Size(44, 20)
+        Me.lblmun.TabIndex = 11
+        Me.lblmun.Text = "Mun:"
         '
-        'btnCalcular
+        'lbldepto
         '
-        Me.btnCalcular.Location = New System.Drawing.Point(134, 124)
-        Me.btnCalcular.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(222, 72)
-        Me.btnCalcular.TabIndex = 8
-        Me.btnCalcular.Text = "Calcular"
-        Me.btnCalcular.UseVisualStyleBackColor = True
+        Me.lbldepto.AutoSize = True
+        Me.lbldepto.Location = New System.Drawing.Point(13, 58)
+        Me.lbldepto.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbldepto.Name = "lbldepto"
+        Me.lbldepto.Size = New System.Drawing.Size(57, 20)
+        Me.lbldepto.TabIndex = 10
+        Me.lbldepto.Text = "Depto:"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(472, 276)
-        Me.Controls.Add(Me.lblRespuestaRomano)
-        Me.Controls.Add(Me.txtnumero)
-        Me.Controls.Add(Me.lblnumero)
-        Me.Controls.Add(Me.btnCalcular)
+        Me.ClientSize = New System.Drawing.Size(605, 146)
+        Me.Controls.Add(Me.cboMun)
+        Me.Controls.Add(Me.cboDepto)
+        Me.Controls.Add(Me.lblmun)
+        Me.Controls.Add(Me.lbldepto)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Conversores de numeros Decimales a Romanos"
+        Me.Text = "Combos Dinamicos"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents lblRespuestaRomano As Label
-    Friend WithEvents txtnumero As TextBox
-    Friend WithEvents lblnumero As Label
-    Friend WithEvents btnCalcular As Button
+    Friend WithEvents cboMun As ComboBox
+    Friend WithEvents cboDepto As ComboBox
+    Friend WithEvents lblmun As Label
+    Friend WithEvents lbldepto As Label
 End Class
